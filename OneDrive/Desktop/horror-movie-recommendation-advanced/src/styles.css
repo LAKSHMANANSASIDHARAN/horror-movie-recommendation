@@ -1,0 +1,110 @@
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px crimson;
+    margin-top: 5%;
+    max-width: 800px; /* Increased for better movie card display */
+  }
+  
+  button {
+    background: crimson;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: darkred;
+  }
+  
+  input,
+  select {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .movie-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px crimson;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* New styles for options (Select Type page) */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .options-grid button {
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .options-grid button:hover {
+    background-color: #e50914;
+    color: white;
+    transform: scale(1.05);
+  }
+  .movie-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .movie-image.loaded {
+    opacity: 1;
+  }
+    
